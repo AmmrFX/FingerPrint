@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <!-- Row 0  -->
+            <LinearLayout
+                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_margin="10dp">
+
+
+                <ImageView
+                    android:id="@+id/fingerImageView2"
+                    android:layout_width="256dp"
+
+                    android:background="@drawable/border_image"
+                    android:layout_height="0dp"
+                    android:scaleType="centerCrop"
+                    android:layout_margin="20dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="6">
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_margin="1dp"
+                        android:text="إتصال"
+                        android:id="@+id/button_enumerate2"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"></Button>
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_margin="1dp"
+                        android:id="@+id/button_open_close2"
+
+                        android:text="فتح"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"></Button>
+
+                    <Button
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_margin="1dp"
+                        android:text="مسح البصمات"
+                        android:id="@+id/button_acquire2"
+
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"></Button>
+
+                    <Button
+                        android:id="@+id/Verify"
+                        android:layout_height="match_parent"
+                        android:layout_width="0dp"
+                        android:layout_margin="1dp"
+                        android:text="التحقق"
+                        android:textSize="15dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"></Button>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <!-- Row 1  -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp">
+
+                    <!--Col 1-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:gravity="bottom">
+
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center" >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="تاريخ الميلاد"
+                                android:textSize="15dp"  ></TextView>
+                            <EditText
+                                android:id="@+id/birthdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:textAlignment="center"
+                                android:background="@drawable/custiom_input"
+                                ></EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="موقف التجنيد"
+                                android:textSize="15dp"></TextView>
+                            <EditText
+                                android:id="@+id/MilitaryStatus"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="35dp"
+                                android:background="@drawable/custiom_input"
+                                ></EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="الحاله الاجتماعيه"
+                                android:textSize="15dp"></TextView>
+                            <EditText
+                                android:id="@+id/martialStatus"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:textAlignment="center"
+                                android:background="@drawable/custiom_input"
+                                ></EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center" >
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="الرتبه"
+                                android:textSize="15dp"></TextView>
+                            <EditText
+                                android:id="@+id/Rank"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:textAlignment="center"
+                                android:background="@drawable/custiom_input"
+                                ></EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="السلاح"
+                                android:textSize="15dp"></TextView>
+                            <EditText
+                                android:id="@+id/Weapon"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="35dp"
+                                android:background="@drawable/custiom_input"
+                                ></EditText>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+                    <!--Col 1-->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical"
+                        android:gravity="bottom">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="الرقم القومى"
+                                android:textSize="15dp"></TextView>
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:id="@+id/NatId"
+                                android:textAlignment="center"
+                                android:layout_height="35dp"
+                                android:background="@drawable/custiom_input" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center" >
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="الاسم"
+                                android:textSize="15dp"  ></TextView>
+                            <EditText
+                                android:id="@+id/Name"
+                                android:layout_width="match_parent"
+                                android:textAlignment="center"
+                                android:layout_height="35dp"
+                                android:background="@drawable/custiom_input"
+                                ></EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="العنوان"
+                                android:textSize="15dp"></TextView>
+                            <EditText
+                                android:id="@+id/Address"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:textAlignment="center"
+                                android:background="@drawable/custiom_input"
+                                ></EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="الديانه"
+                                android:textSize="15dp"></TextView>
+                            <EditText
+                                android:id="@+id/Religion"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:textAlignment="center"
+                                android:background="@drawable/custiom_input"
+                                ></EditText>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center" >
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="النوع"
+                                android:textSize="15dp"></TextView>
+                            <EditText
+                                android:id="@+id/Gender"
+                                android:textAlignment="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:background="@drawable/custiom_input"
+                                ></EditText>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

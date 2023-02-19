@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">9_11</string>
+
+    <string name="default_text">Hello World!</string>
+    <string name="tab1">Capture</string>
+    <string name="tab2">Verify</string>
+    <string name="capture">Capture</string>
+    <string name="stop">Stop</string>
+    <string name="verify">Verify</string>
+
+
+    <dimen name="padding_medium">8dp</dimen>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

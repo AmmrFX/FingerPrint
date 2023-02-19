@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Main2">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/row2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="300dp"
+            android:layout_margin="10dp"
+            android:id="@+id/enrollment"
+            android:backgroundTint="@color/lightblue"
+            android:text="إضافه بصمه"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/AllCards"
+            >
+
+
+
+
+        </Button>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="300dp"
+            android:id="@+id/AllCards"
+            android:text="إضافة وجه"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:backgroundTint="@color/lightblue"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/Validation"
+            app:layout_constraintLeft_toRightOf="@id/enrollment" >
+        </Button>  <Button
+        android:layout_width="0dp"
+        android:layout_weight="1"
+            android:layout_height="300dp"
+            android:id="@+id/rec"
+            android:text="التعرف علي الوجه"
+            android:layout_margin="10dp"
+            android:textSize="20dp"
+            android:backgroundTint="@color/lightblue"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/Validation"
+            app:layout_constraintLeft_toRightOf="@id/enrollment" >
+        </Button>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="300dp"
+            android:id="@+id/Validation"
+            android:textSize="20sp"
+            android:text="التحقق من البصمات"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/lightblue2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/AllCards"
+            app:layout_constraintRight_toRightOf="parent">
+        </Button>
+
+    </LinearLayout>
+
+
+
+
+
+
+</ScrollView>
