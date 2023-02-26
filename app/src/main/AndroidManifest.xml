@@ -16,6 +16,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.9_11">
         <activity
+            android:name=".SignalR"
+            android:exported="false" />
+        <activity
             android:name=".facepictuers"
             android:exported="false" />
         <activity
@@ -37,9 +40,8 @@
             android:name=".CbmVerifyActivity"
             android:exported="true" />
         <activity
-            android:name=".CbmMainActivity"
-            android:exported="true"
-            android:parentActivityName=".CbmMainActivity" />
+            android:name=".Main2"
+            android:exported="true" />
         <activity
             android:name=".Entry"
             android:exported="true" />
@@ -47,7 +49,7 @@
             android:name=".MainActivity"
             android:exported="true" />
         <activity
-            android:name=".Main2"
+            android:name=".CbmMainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
